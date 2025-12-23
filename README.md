@@ -1,21 +1,32 @@
-# foodhub-order-analysis
-Context:
-* The number of restaurants in New York is increasing day by day. Lots of students and busy professionals rely on those restaurants due to their hectic lifestyles. Online food delivery service is a great option for them. It provides them with good food from their favorite restaurants. A food aggregator company FoodHub offers access to multiple restaurants through a single smartphone app.
-*The app allows the restaurants to receive a direct online order from a customer. The app assigns a delivery person from the company to pick up the order after it is confirmed by the restaurant. The delivery person then uses the map to reach the restaurant and waits for the food package. Once the food package is handed over to the delivery person, he/she confirms the pick-up in the app and travels to the customer's location to deliver the food. The delivery person confirms the drop-off in the app after delivering the food package to the customer. The customer can rate the order in the app. The food aggregator earns money by collecting a fixed margin of the delivery order from the restaurants.
+# FoodHub Order Explatory Data Analysis & Business Optimization
 
-Objective:
-* The food aggregator company has stored the data of the different orders made by the registered customers in their online portal. They want to analyze the data to get a fair idea about the demand of different restaurants which will help them in enhancing their customer experience. Suppose you are hired as a Data Scientist in this company and the Data Science team has shared some of the key questions that need to be answered. Perform the data analysis to find answers to these questions that will help the company to improve the business.
+## 📋 Project Overview
+FoodHub is a food aggregator that connects New York City residents with various restaurants. This project involves a comprehensive analysis of customer behavior, restaurant performance, and delivery efficiency. The goal is to provide data-driven recommendations to improve customer retention and optimize the company's revenue model.
 
-Data Description:
-* The data contains the different data related to a food order. The detailed data dictionary is given below.
+## 🎯 Business Objective
+* **Customer Profiling:** Identify top customers and their ordering patterns to target marketing efforts.
+* **Operational Efficiency:** Analyze delivery times and preparation times to reduce total delivery duration.
+* **Revenue Optimization:** Evaluate the effectiveness of the current commission structure and suggest improvements.
+* **Quality Control:** Investigate the relationship between ratings and restaurant performance.
 
-Data Dictionary:
-* order_id: Unique ID of the order
-* customer_id: ID of the customer who ordered the food
-* restaurant_name: Name of the restaurant
-* cuisine_type: Cuisine ordered by the customer
-* cost: Cost of the order
-* day_of_the_week: Indicates whether the order is placed on a weekday or weekend (The weekday is from Monday to Friday and the weekend is * * Saturday and Sunday)
-* rating: Rating given by the customer out of 5
-* food_preparation_time: Time (in minutes) taken by the restaurant to prepare the food. This is calculated by taking the difference between the timestamps of the restaurant's order confirmation and the delivery person's pick-up confirmation.
-* delivery_time: Time (in minutes) taken by the delivery person to deliver the food package. This is calculated by taking the difference between the timestamps of the delivery person's pick-up confirmation and drop-off information
+## 🛠️ Methodology
+1. **Data Wrangling:** Cleaned and structured the dataset, handling missing ratings and ensuring correct data types for time-based analysis.
+2. **Exploratory Data Analysis (EDA):** Performed univariate and multivariate analysis to identify trends in cuisine popularity, order volume by day of the week, and delivery bottlenecks.
+3. **Business Logic Implementation:** Created calculated fields to determine "Total Delivery Time" and "Net Revenue" based on tiered commission structures.
+4. **Statistical Summaries:** Generated descriptive statistics to identify high-performing restaurants and regions.
+
+## 🧰 Technical Skills & Tech Stack
+* **Analysis:** Python, Pandas, NumPy
+* **Visualization:** Seaborn, Matplotlib
+* **Business Intelligence:** Descriptive Statistics, Revenue Modeling, Operational Analysis
+
+## 📈 Results & Key Insights
+* **Peak Performance:** Weekends account for a significantly higher volume of orders, suggesting a need for increased delivery staff during these windows.
+* **Cuisine Trends:** American, Japanese, and Italian cuisines dominate the platform, making up over 70% of total orders.
+* **Delivery Bottlenecks:** Identified that "Food Preparation Time" is more volatile than "Travel Time," indicating a need for better restaurant-side efficiency.
+* **Revenue Potential:** A significant portion of orders falls under a high-revenue tier, suggesting that a small percentage of high-volume restaurants drive the majority of FoodHub's profit.
+
+## 💡 Strategic Recommendations
+* **Promotional Strategy:** Introduce loyalty programs for the top 5% of customers who contribute to the bulk of the revenue.
+* **Service Standards:** Partner with restaurants showing high preparation times to streamline their kitchen operations for the app.
+* **Rating Incentives:** Implement a feedback prompt for unrated orders to improve the data density for restaurant quality scores.
