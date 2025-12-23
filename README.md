@@ -1,4 +1,4 @@
-# FoodHub Order Explatory Data Analysis & Business Optimization
+# Food Order Explatory Data Analysis & Business Optimization
 
 ## 📋 Project Overview
 FoodHub is a food aggregator that connects New York City residents with various restaurants. This project involves a comprehensive analysis of customer behavior, restaurant performance, and delivery efficiency. The goal is to provide data-driven recommendations to improve customer retention and optimize the company's revenue model.
